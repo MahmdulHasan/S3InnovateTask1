@@ -35,7 +35,7 @@ for (int second = 0; second <= totalSeconds; second += 20)
   
 }
 
-Console.Write(totalCost);
+Console.Write(totalCost + "taka");
 
 
 
