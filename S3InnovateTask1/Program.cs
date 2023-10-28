@@ -18,11 +18,11 @@ decimal totalCost = 0m;
 int peakStartHour = 9;
 int peakEndHour = 22;
 
-for (int second = 0; second <= totalSeconds; second += 20)
+while(startDate < endDate)
 {
-    DateTime currentTime = startDate.AddSeconds(second);
-    
-    int currentHour = currentTime.Hour;
+    startDate = startDate.AddSeconds(20);
+
+    int currentHour = startDate.Hour;
 
     if (currentHour >= peakStartHour && currentHour < peakEndHour)
     {
@@ -35,7 +35,7 @@ for (int second = 0; second <= totalSeconds; second += 20)
   
 }
 
-Console.Write(totalCost + "taka");
+Console.Write(totalCost + " taka");
 
 
 
